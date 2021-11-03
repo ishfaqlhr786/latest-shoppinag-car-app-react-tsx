@@ -25,6 +25,8 @@ const getProducts= async (): Promise<CartItemType[]>=>
 
 
 const App=()=> {
+  const CalculateTotal1=(items:CartItemType[]) => 
+    items.reduce((ack:number,item)=> ack + item.amount ,0);
   const [cartOpen,setCartOpen]=useState(false);
   const [cartItem,setCartItem]= useState([] as CartItemType[]);
 
