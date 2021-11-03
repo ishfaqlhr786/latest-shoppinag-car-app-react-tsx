@@ -84,6 +84,9 @@ if(item.id===id){
      <Badge badgeContent={getTotalItems} color='error'>
        <AddShoppingCartIcon/>
      </Badge>
+       <span style={{color:'red'}}>
+      {CalculateTotal1(cartItem).toFixed(0)}
+      </span>
      </StyledButton>
 <Grid container spacing={3} >
   
